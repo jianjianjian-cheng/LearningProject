@@ -7,7 +7,6 @@ using UnityEngine.UI;
 
 public class InventoryPanel : UIPanelBase
 {
-    private bool isPlayingAnimation = false;
     private List<ItemData> itemDatasList = new List<ItemData>();
     [SerializeField] private GameObject itemPrefab;
     [SerializeField] private Transform itemParent;

@@ -7,6 +7,7 @@ using UnityEngine;
 
 public abstract class UIPanelBase : MonoBehaviour
 {
+    protected bool isPlayingAnimation = false;
     protected CanvasGroup canvasGroup;
     protected RectTransform rectTransform;
 

@@ -41,16 +41,7 @@ sysinfo.txt
 *.unitypackage
 
 # === IDE 缓存 ===
-.vs/
 .gradle/
-
-# === Codely CLI ===
-.codely-cli/
-.codely.packages/
-.codelyignore
-.com-unity-codely.json
-mem-log/
-screenshots/
 
 # === 系统文件 ===
 .DS_Store

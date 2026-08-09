@@ -11,17 +11,20 @@ public class BottomPanel : MonoBehaviour
     [SerializeField] private Button inventoryButton;
     [SerializeField] private Button inventoryHideButton;
 
+    [SerializeField] private Button rewardButton;
+
 
     void Start()
     {
-        //Lambda
-        // button.onClick.AddListener(() => { Debug.Log("Click Button"); });
-
         button.onClick.AddListener(() => SetHP(20));
 
         inventoryButton.onClick.AddListener(() => OpenInventory());
 
-        inventoryHideButton.onClick.AddListener(() => UIManager.Instacnce.Hide<InventoryPanel>());
+        inventoryHideButton.onClick.AddListener(() =>
+        UIManager.Instacnce.Hide<InventoryPanel>());
+
+        rewardButton.onClick.AddListener(() =>
+        UIManager.Instacnce.Show<RewardPanel>());
     }
 
     private void SetHP(float value)

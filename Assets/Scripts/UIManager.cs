@@ -15,6 +15,7 @@ public enum UILayer
 public enum PanelType
 {
     Inventory,
+    Reward,
 }
 public class UIManager : MonoBehaviour
 {
@@ -29,6 +30,7 @@ public class UIManager : MonoBehaviour
     private readonly Dictionary<PanelType, string> panelPaths = new Dictionary<PanelType, string>
     {
         {PanelType.Inventory , "UI/Panel/InventoryPanel"},
+        {PanelType.Reward , "UI/Panel/RewardPanel"},
     };
 
     //已经加载的面板缓存
@@ -61,6 +63,7 @@ public class UIManager : MonoBehaviour
         return panelType switch
         {
             PanelType.Inventory => UILayer.Normal,
+            PanelType.Reward => UILayer.Normal,
             _ => UILayer.Normal,
         };
     }
